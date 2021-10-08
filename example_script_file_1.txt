@@ -1,0 +1,28 @@
+# create 5 layers
+create 5
+# set current layer to the first layer, which is topmost and visible
+current 1 
+# loads the bear image onto the first layer
+load res/bear.png
+# blurs the current image
+filter blur
+# makes the image sepia
+filter sepia_______
+# makes the current image monochrome
+filter monochrome
+# sharpens the image
+filter sharp
+# saves the filtered image of the first layer
+save ppm
+# makes the current layer invisible
+invisible
+# makes the current layer visible
+visible
+# sets the current to the third layer, which is topmost and visible
+current 3
+# loads the sloth image 
+load res/sloth.png
+# saves the sloth image as is
+save png
+# saves all the layers
+saveall 
